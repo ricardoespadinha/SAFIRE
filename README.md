@@ -25,68 +25,71 @@ depend on the victim model.
 
 The repository is organized as follows:
 
-\Experiment 1 - Sentiment Analysis
-    \Complete Datasets
-        Has datasets SST-3 and DynaSent
-    
-    \Results
-        \DynaSent
-            Results for DynaSent
+    \Experiment 1 - Sentiment Analysis
+        
+        \Complete Datasets
+            Has datasets SST-3 and DynaSent
+        
+        \Results
+            \DynaSent
+                Results for DynaSent
 
-        \SST-3
-            Results for SST-3
+            \SST-3
+                Results for SST-3
 
-    \Splits
-        Has the script we used to create the test and train splits for both datasets
-
-
-\Experiment 2 - Judge Ensemble selection
-    \Dataset Sent to Victim LLMs
-        Contains the dataset used for Experiment 2 as well as the scripts we used to send it to the victim LLMs
-
-    \Experiment Results
-        Contains the compliant responses of the victims as well as the scripts used for the experiment
-
-        \output_9
-            Results for the experiment with 9 judges
-
-        \output_11
-            Results for the experiment with 11 judges
-
-    \Judge Ensemble Results
-        Results analyzing the chosen ensemble for these results
-
-    \Judge Results
-        Results for each of the 11 judges
-
-    \Judge Scripts
-        Scripts used to judge the jailbreak results
-
-    \Victim LLMs Answers
-        Victim LLM responses to the dataset (jailbreak results)
+        \Splits
+            Has the script we used to create the test and train splits for both datasets
 
 
-\Experiment 3 - Jailbreaks Compliance
-    \Experiment 3.1 - Neutral Prompt Variation
-        Has the script used to run experiment 3.1 and its results
+    \Experiment 2 - Judge Ensemble selection
+        
+        \Dataset Sent to Victim LLMs
+            Contains the dataset used for Experiment 2 as well as the scripts we used to send it to the victim LLMs
 
-    \Experiment 3.2 - Judge Ensemble (Human Annotator)
-        Scripts and results for Experiment 3.2
+        \Experiment Results
+            Contains the compliant responses of the victims as well as the scripts used for the experiment
 
-    \Judge Scripts
-        Scripts used to judge the jailbreak results
+            \output_9
+                Results for the experiment with 9 judges
 
-    \Scripts to Send Prompt to Victim
-        Scripts used to send harmful prompts to the victim LLMs
+            \output_11
+                Results for the experiment with 11 judges
 
-    \Statistical Analysis
-        Script for statistical analysis and its results
+        \Judge Ensemble Results
+            Results analyzing the chosen ensemble for these results
+
+        \Judge Results
+            Results for each of the 11 judges
+
+        \Judge Scripts
+            Scripts used to judge the jailbreak results
+
+        \Victim LLMs Answers
+            Victim LLM responses to the dataset (jailbreak results)
 
 
-\SAFIRE Dataset
-    Contains the SAFIRE dataset, as well as the jailbreak and judged results for Experiment 3
+    \Experiment 3 - Jailbreaks Compliance
+        
+        \Experiment 3.1 - Neutral Prompt Variation
+            Has the script used to run experiment 3.1 and its results
+
+        \Experiment 3.2 - Judge Ensemble (Human Annotator)
+            Scripts and results for Experiment 3.2
+
+        \Judge Scripts
+            Scripts used to judge the jailbreak results
+
+        \Scripts to Send Prompt to Victim
+            Scripts used to send harmful prompts to the victim LLMs
+
+        \Statistical Analysis
+            Script for statistical analysis and its results
 
 
-\Script for Experiment 3 Pipeline
-    Contains a script that performs all steps for experiment 3 (except human validation)
+    \SAFIRE Dataset
+        Contains the SAFIRE dataset, as well as the jailbreak and judged results for Experiment 3
+
+
+    \Script for Experiment 3 Pipeline
+        Contains a script that performs all steps for experiment 3 (except human validation)
 
