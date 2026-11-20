@@ -1,0 +1,121 @@
+n_votes,victim,category,population,sample
+0,gemma3,Dissemination of Dangerous Information,3023,2
+0,gemma3,Malicious Use,5707,3
+0,gemma3,Misinformation,1855,1
+0,gemma3,Privacy Infringement,2730,1
+0,gemma3,Toxic Content,2969,2
+0,gemma4,Dissemination of Dangerous Information,3127,2
+0,gemma4,Malicious Use,5755,3
+0,gemma4,Misinformation,2253,1
+0,gemma4,Privacy Infringement,3070,2
+0,gemma4,Toxic Content,3216,2
+0,llama3,Dissemination of Dangerous Information,3219,2
+0,llama3,Malicious Use,5804,3
+0,llama3,Misinformation,2709,1
+0,llama3,Privacy Infringement,2535,1
+0,llama3,Toxic Content,3127,2
+0,llama4,Dissemination of Dangerous Information,2843,2
+0,llama4,Malicious Use,5530,3
+0,llama4,Misinformation,1546,1
+0,llama4,Privacy Infringement,2631,1
+0,llama4,Toxic Content,2244,1
+0,mistral,Dissemination of Dangerous Information,1922,1
+0,mistral,Malicious Use,2968,2
+0,mistral,Misinformation,1064,1
+0,mistral,Privacy Infringement,2289,1
+0,mistral,Toxic Content,1866,1
+0,nemotron,Dissemination of Dangerous Information,2859,2
+0,nemotron,Malicious Use,5554,3
+0,nemotron,Misinformation,1710,1
+0,nemotron,Privacy Infringement,2729,1
+0,nemotron,Toxic Content,2457,1
+1,gemma3,Dissemination of Dangerous Information,31,1
+1,gemma3,Malicious Use,21,0
+1,gemma3,Misinformation,107,2
+1,gemma3,Privacy Infringement,86,2
+1,gemma3,Toxic Content,35,1
+1,gemma4,Dissemination of Dangerous Information,28,0
+1,gemma4,Malicious Use,16,0
+1,gemma4,Misinformation,114,2
+1,gemma4,Privacy Infringement,61,1
+1,gemma4,Toxic Content,32,1
+1,llama3,Dissemination of Dangerous Information,5,0
+1,llama3,Malicious Use,5,0
+1,llama3,Misinformation,55,1
+1,llama3,Privacy Infringement,146,3
+1,llama3,Toxic Content,12,0
+1,llama4,Dissemination of Dangerous Information,46,1
+1,llama4,Malicious Use,95,2
+1,llama4,Misinformation,122,2
+1,llama4,Privacy Infringement,144,3
+1,llama4,Toxic Content,72,1
+1,mistral,Dissemination of Dangerous Information,122,2
+1,mistral,Malicious Use,204,4
+1,mistral,Misinformation,160,3
+1,mistral,Privacy Infringement,198,4
+1,mistral,Toxic Content,138,2
+1,nemotron,Dissemination of Dangerous Information,38,1
+1,nemotron,Malicious Use,47,1
+1,nemotron,Misinformation,168,3
+1,nemotron,Privacy Infringement,246,5
+1,nemotron,Toxic Content,129,2
+2,gemma3,Dissemination of Dangerous Information,33,1
+2,gemma3,Malicious Use,27,1
+2,gemma3,Misinformation,123,3
+2,gemma3,Privacy Infringement,42,1
+2,gemma3,Toxic Content,23,0
+2,gemma4,Dissemination of Dangerous Information,28,1
+2,gemma4,Malicious Use,23,0
+2,gemma4,Misinformation,89,2
+2,gemma4,Privacy Infringement,15,0
+2,gemma4,Toxic Content,8,0
+2,llama3,Dissemination of Dangerous Information,7,0
+2,llama3,Malicious Use,6,0
+2,llama3,Misinformation,43,1
+2,llama3,Privacy Infringement,78,2
+2,llama3,Toxic Content,18,0
+2,llama4,Dissemination of Dangerous Information,44,1
+2,llama4,Malicious Use,64,1
+2,llama4,Misinformation,170,4
+2,llama4,Privacy Infringement,73,2
+2,llama4,Toxic Content,121,3
+2,mistral,Dissemination of Dangerous Information,114,2
+2,mistral,Malicious Use,248,5
+2,mistral,Misinformation,210,4
+2,mistral,Privacy Infringement,144,3
+2,mistral,Toxic Content,161,3
+2,nemotron,Dissemination of Dangerous Information,35,1
+2,nemotron,Malicious Use,45,1
+2,nemotron,Misinformation,156,3
+2,nemotron,Privacy Infringement,70,2
+2,nemotron,Toxic Content,126,3
+3,gemma3,Dissemination of Dangerous Information,213,1
+3,gemma3,Malicious Use,119,0
+3,gemma3,Misinformation,1215,3
+3,gemma3,Privacy Infringement,442,1
+3,gemma3,Toxic Content,273,1
+3,gemma4,Dissemination of Dangerous Information,117,0
+3,gemma4,Malicious Use,80,0
+3,gemma4,Misinformation,844,2
+3,gemma4,Privacy Infringement,154,1
+3,gemma4,Toxic Content,44,0
+3,llama3,Dissemination of Dangerous Information,69,0
+3,llama3,Malicious Use,59,0
+3,llama3,Misinformation,493,1
+3,llama3,Privacy Infringement,541,2
+3,llama3,Toxic Content,143,0
+3,llama4,Dissemination of Dangerous Information,367,1
+3,llama4,Malicious Use,185,1
+3,llama4,Misinformation,1462,4
+3,llama4,Privacy Infringement,452,1
+3,llama4,Toxic Content,863,2
+3,mistral,Dissemination of Dangerous Information,1142,3
+3,mistral,Malicious Use,2454,7
+3,mistral,Misinformation,1866,5
+3,mistral,Privacy Infringement,669,2
+3,mistral,Toxic Content,1135,3
+3,nemotron,Dissemination of Dangerous Information,368,1
+3,nemotron,Malicious Use,228,1
+3,nemotron,Misinformation,1266,4
+3,nemotron,Privacy Infringement,255,1
+3,nemotron,Toxic Content,588,2

@@ -1,0 +1,10 @@
+quantity,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+"polarity (positive vs negative, at magnitude 3)",1.2658085731485238,1.2157775955946226,1.3178983965999551,2.1910667769375978e-30,Independence (fallback),True
+"magnitude (per +1 step, negative framings)",0.9160275150386542,0.9024451222894367,0.9298143317337022,1.2052364658609015e-30,Independence (fallback),True
+interaction (extra per-step change for positive),1.0694308950343758,1.0515014045017985,1.0876661071089138,7.1607420360505e-15,Independence (fallback),True
+"magnitude (per +1 step, positive framings)",0.9796281252839032,0.9651585250672784,0.9943146529015622,0.006708481263472534,Independence (fallback),True
+polarity OR (positive vs negative) at magnitude 1,1.1067832553013186,1.0535436698248108,1.1627132403719713,5.4894636541703665e-05,Independence (fallback),True
+polarity OR (positive vs negative) at magnitude 2,1.1836282073259494,1.135237493214574,1.234081627458052,2.4569177967275148e-15,Independence (fallback),True
+polarity OR (positive vs negative) at magnitude 3,1.2658085731485238,1.2157775955946226,1.3178983965999551,2.1910667769375358e-30,Independence (fallback),True
+polarity OR (positive vs negative) at magnitude 4,1.3536947953244123,1.293317124760296,1.4168911582517218,1.0891098600673823e-38,Independence (fallback),True
+polarity OR (positive vs negative) at magnitude 5,1.4476830365671625,1.3691696584521518,1.53069866939179,1.1533782682271753e-38,Independence (fallback),True

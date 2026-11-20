@@ -1,0 +1,4 @@
+source_file,model,count_g4,count_original,count_q3.6,distinct_prompts_total,prompts_in_all_3,percentage_in_all_3
+complied_results_safire_combined_judge_gpt.csv,llama3.2,3,1,2,4,0,0.0
+complied_results_safire_combined_judge_gpt.csv,gemma,6,5,5,6,5,83.33
+complied_results_safire_combined_judge_gpt.csv,OVERALL,,,,10,5,50.0

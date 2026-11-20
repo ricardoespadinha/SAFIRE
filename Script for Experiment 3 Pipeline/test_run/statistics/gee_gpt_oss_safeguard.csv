@@ -1,0 +1,53 @@
+judge,model,term_type,term,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+gpt_oss_safeguard,ALL,intercept,Intercept,1.9649372012853104,0.2532751530085298,15.244204412206662,0.51815533167457,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.-5]",1.933119434713952,0.6866537781719922,5.44226343415351,0.2119865246557292,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.-4]",0.8209647343451307,0.4325974163497792,1.5579914940902422,0.5461696608769626,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.-3]",0.6024783487263051,0.4062704412789044,0.893444670848672,0.011722091257914487,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.-2]",0.9067355803538008,0.47863745931165563,1.7177289338405164,0.763918247839471,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.-1]",0.7420455174469539,0.5725881970763337,0.9616536854491099,0.024097016985802702,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.1]",0.5408128487932233,0.3241069753291293,0.9024135846592969,0.018620737117531597,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.2]",0.6693940709588694,0.3759001691685673,1.1920410230886296,0.17278602087771644,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.3]",0.999999999999998,0.5832918498631839,1.7144076335620915,0.9999999999999942,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.4]",0.6024783487263052,0.23647428966688497,1.5349667027028433,0.2882719424682183,Independence (fallback),True
+gpt_oss_safeguard,ALL,level,"C(level, Treatment(0))[T.5]",0.5408128487932232,0.19041827296742975,1.5359793619694737,0.2484406911303948,Independence (fallback),True
+gpt_oss_safeguard,ALL,victim,C(victim)[T.llama3.2],0.12157206712634976,0.04554765388242733,0.32449020411731566,2.5888115307776928e-05,Independence (fallback),True
+gpt_oss_safeguard,ALL,category,C(category)[T.Malicious Use],0.8816359476528879,0.0474441096776257,16.38310739679379,0.932664239498717,Independence (fallback),True
+gpt_oss_safeguard,ALL,category,C(category)[T.Misinformation],1.7648750780859974,0.3795347643917074,8.206847787030048,0.46878275013919357,Independence (fallback),True
+gpt_oss_safeguard,ALL,category,C(category)[T.Privacy Infringement],0.16389637140036445,0.028879165128626684,0.9301522546986316,0.04118060932116294,Independence (fallback),True
+gpt_oss_safeguard,ALL,category,C(category)[T.Toxic Content],0.8094831711289348,0.03784619632067843,17.313840439572342,0.8924131711973233,Independence (fallback),True
+gpt_oss_safeguard,ALL,variation_set,C(variation_set)[T.original],0.9204766128939992,0.6089300125247636,1.3914196663945062,0.6942714769853258,Independence (fallback),True
+gpt_oss_safeguard,ALL,variation_set,C(variation_set)[T.q3.6],0.8704085564782671,0.6604030628114071,1.1471949448043874,0.32452130617020514,Independence (fallback),True
+gpt_oss_safeguard,llama3.2,intercept,Intercept,0.48859733798252747,0.11612974291640892,2.0556952309405343,0.3285777272139452,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.-5]",0.7830887322643904,0.21844178370889974,2.807283259583024,0.707394317359719,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.-4]",0.5897657777898565,0.3154397378773099,1.1026628255294846,0.0981547957321872,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.-3]",0.26212561519927197,0.08094039294844911,0.8488942991339079,0.025535765435951385,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.-2]",0.5897657777898564,0.1438983583708223,2.4171483023853666,0.4631537317508162,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.-1]",0.7830887322643904,0.34344628969435226,1.7855134296113326,0.5609458865442554,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.1]",0.4169594027731494,0.16939930207028261,1.0263037771478545,0.056979568799303076,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.2]",0.41695940277314947,0.08870327975084255,1.9599629692304605,0.26795448603048266,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.3]",1.0,0.2843206812394448,3.517155331932521,0.9999999999999999,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.4]",1.0000000000000002,0.21431605261802994,4.666006058735484,0.9999999999999997,Exchangeable,True
+gpt_oss_safeguard,llama3.2,level,"C(level, Treatment(0))[T.5]",0.2621256151992719,0.02969166826272305,2.31411174123415,0.22823542354551685,Exchangeable,True
+gpt_oss_safeguard,llama3.2,category,C(category)[T.Malicious Use],1.1343908467163852,0.14231980765378355,9.041907899737854,0.9052272318638857,Exchangeable,True
+gpt_oss_safeguard,llama3.2,category,C(category)[T.Misinformation],0.5492229275604418,0.1736694606784157,1.7368961876182758,0.30767388031520315,Exchangeable,True
+gpt_oss_safeguard,llama3.2,category,C(category)[T.Privacy Infringement],0.1252511637543717,0.024862065983945993,0.6309955911127596,0.011799304940856287,Exchangeable,True
+gpt_oss_safeguard,llama3.2,category,C(category)[T.Toxic Content],1.3543702054982893,0.1574931671925403,11.646972921047217,0.7823136178108271,Exchangeable,True
+gpt_oss_safeguard,llama3.2,variation_set,C(variation_set)[T.original],0.6996179272379862,0.3752695921960144,1.3043029712279857,0.26100477722779625,Exchangeable,True
+gpt_oss_safeguard,llama3.2,variation_set,C(variation_set)[T.q3.6],0.35075344378577195,0.15620974931495962,0.7875819458587195,0.011131026404365679,Exchangeable,True
+gpt_oss_safeguard,gemma,intercept,Intercept,1.3960022579583047,0.14894636974209352,13.084053727520496,0.7701374897236902,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.-5]",4.556183058928012,0.8674298479826213,23.9313923941415,0.07314692001801323,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.-4]",1.0000000000000002,0.3914096489930779,2.5548680329484816,0.9999999999999996,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.-3]",0.8442159826006214,0.6268017925386354,1.137043055336193,0.2650067562649301,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.-2]",1.1847553348237108,0.8810209958447104,1.5932028975625576,0.2619524897959329,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.-1]",0.7118263534889596,0.4843188316493594,1.046204946844254,0.08361784303015822,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.1]",0.5986037057798584,0.3742003707956386,0.957578945770397,0.03229008385239781,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.2]",0.8442159826006213,0.4916144971888049,1.449714419232473,0.539318278138488,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.3]",1.0000000000000002,0.6256274042855537,1.5983954557456896,0.9999999999999991,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.4]",0.41737408467951803,0.15294212943178068,1.1390002689858407,0.08803233225669375,Independence (fallback),True
+gpt_oss_safeguard,gemma,level,"C(level, Treatment(0))[T.5]",0.7118263534889595,0.22595974146338782,2.242420504820276,0.5615052314433933,Independence (fallback),True
+gpt_oss_safeguard,gemma,category,C(category)[T.Malicious Use],0.6756791031117426,0.02102728908719012,21.71189298291503,0.824748863364127,Independence (fallback),True
+gpt_oss_safeguard,gemma,category,C(category)[T.Misinformation],5.356655231234041,0.5057080072705215,56.739768510245625,0.16338716098176864,Independence (fallback),True
+gpt_oss_safeguard,gemma,category,C(category)[T.Privacy Infringement],0.16339853239545432,0.015988447526714297,1.6698982402374067,0.12661633417188575,Independence (fallback),True
+gpt_oss_safeguard,gemma,category,C(category)[T.Toxic Content],0.4550144522121296,0.015089110020525294,13.721031355744389,0.6504964071248525,Independence (fallback),True
+gpt_oss_safeguard,gemma,variation_set,C(variation_set)[T.original],1.1012032957593927,0.7063581798438076,1.7167617409902345,0.6704559581778508,Independence (fallback),True
+gpt_oss_safeguard,gemma,variation_set,C(variation_set)[T.q3.6],1.4002121428811294,0.9931007418029163,1.974214661759713,0.0547989716444134,Independence (fallback),True

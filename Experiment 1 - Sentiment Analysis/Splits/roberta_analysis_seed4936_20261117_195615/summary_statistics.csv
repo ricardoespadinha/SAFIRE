@@ -1,0 +1,2 @@
+split_seed,test_fraction,train_samples,test_samples,test_accuracy,test_neutral_samples,test_neutral_accuracy,test_neutral_misclassifications,score_diff_mean,score_diff_median,score_diff_p10,score_diff_p25,score_diff_p50,score_diff_p75,score_diff_p90,score_diff_p95,score_diff_p99
+4936,0.5,911,910,62.417582417582416,234,59.401709401709404,95,0.4061201061857374,0.33939871191978455,0.05645716190338135,0.17167983949184418,0.33939871191978455,0.6294212713837624,0.8276680439710618,0.8920812264084815,0.9334604562073947

@@ -1,0 +1,4 @@
+Class,Best_Model,Accuracy
+neutral,FinBERT,90.0
+positive,BERT,65.0
+negative,BERT,67.5

@@ -1,0 +1,8 @@
+source_file,model,count_g4,count_original,count_q3.6,distinct_prompts_total,prompts_in_all_3,percentage_in_all_3
+complied_results_safire_combined_judge_gpt_with_original.csv,gemma3,139,137,130,154,120,77.92
+complied_results_safire_combined_judge_gpt_with_original.csv,gemma4,63,56,59,75,45,60.0
+complied_results_safire_combined_judge_gpt_with_original.csv,llama3,57,52,57,70,39,55.71
+complied_results_safire_combined_judge_gpt_with_original.csv,llama4,117,117,106,146,81,55.48
+complied_results_safire_combined_judge_gpt_with_original.csv,mistral,294,298,294,382,203,53.14
+complied_results_safire_combined_judge_gpt_with_original.csv,nemotron,121,113,116,148,94,63.51
+complied_results_safire_combined_judge_gpt_with_original.csv,OVERALL,,,,975,582,59.69

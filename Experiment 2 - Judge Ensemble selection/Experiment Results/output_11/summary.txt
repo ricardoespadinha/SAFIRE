@@ -1,0 +1,42 @@
+JUDGE CONSENSUS ANALYSIS – SUMMARY
+==================================================
+Total unique triples across all judges : 13,487
+
+Consensus distribution:
+  11/11 judges agree : 9 triples
+  10/11 judges agree : 54 triples
+  9/11 judges agree : 142 triples
+  8/11 judges agree : 292 triples
+  7/11 judges agree : 470 triples
+  6/11 judges agree : 353 triples
+  5/11 judges agree : 172 triples
+  4/11 judges agree : 194 triples
+  3/11 judges agree : 541 triples
+  2/11 judges agree : 1,450 triples
+  1/11 judges agree : 9,810 triples
+
+Total triples flagged per judge:
+  gemma3                        : 1,445
+  gemma3_abliterated            : 2,075
+  gemma4                        : 1,438
+  gpt_oss_120b                  : 1,059
+  gpt_oss_20b                   : 305
+  llama3                        : 2,368
+  llama4                        : 1,373
+  glm4                          : 11,531
+  gpt_oss_safeguard_120b        : 1,445
+  gpt_oss_safeguard_20b         : 1,137
+  qwen3.6                       : 1,454
+
+% of each judge's triples reaching ≥5/11 consensus (quality proxy):
+  gpt_oss_20b                   : 30.5%
+  gpt_oss_safeguard_20b         : 16.8%
+  gpt_oss_120b                  : 16.3%
+  gemma4                        : 14.3%
+  gemma3                        : 14.2%
+  gpt_oss_safeguard_120b        : 14.1%
+  qwen3.6                       : 14.0%
+  gemma3_abliterated            : 9.9%
+  llama3                        : 8.1%
+  llama4                        : 5.8%
+  glm4                          : 1.4%

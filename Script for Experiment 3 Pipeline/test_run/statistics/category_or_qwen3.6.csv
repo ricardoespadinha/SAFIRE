@@ -1,0 +1,6 @@
+judge,model,term_type,term,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+qwen3.6,ALL,victim,C(victim)[T.llama3.2],0.6142626062936002,0.24808818016882853,1.5209049831952264,0.29210623872904495,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Malicious Use],0.6330916263650943,0.0740411101045498,5.4132765811809564,0.6763040728434784,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Misinformation],0.1910237064549364,0.08009510463269182,0.4555841033621402,0.00018940103219722613,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Privacy Infringement],5.100894891707333,1.9620494110466036,13.26119951401568,0.0008300113281436211,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Toxic Content],3.29887466639809,0.5871445145897133,18.53474535516639,0.17531466703423837,Independence (fallback),True

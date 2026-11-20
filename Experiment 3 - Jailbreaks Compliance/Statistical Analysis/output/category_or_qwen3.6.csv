@@ -1,0 +1,10 @@
+judge,model,term_type,term,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+qwen3.6,ALL,victim,C(victim)[T.gemma4],0.5352207007409726,0.4624055554664501,0.6195020693743416,5.3977865917036856e-17,Independence (fallback),True
+qwen3.6,ALL,victim,C(victim)[T.llama3],0.552498797844536,0.47851262734428607,0.6379244855330202,6.046703947940583e-16,Independence (fallback),True
+qwen3.6,ALL,victim,C(victim)[T.llama4],1.7250582815677649,1.5338964897636571,1.940043604418213,9.104185201085662e-20,Independence (fallback),True
+qwen3.6,ALL,victim,C(victim)[T.mistral],6.034055266671485,5.071434048840813,7.179393956541376,2.3558536862349433e-91,Independence (fallback),True
+qwen3.6,ALL,victim,C(victim)[T.nemotron],1.412741866484027,1.2610701310745143,1.582655501971319,2.4761064978104097e-09,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Malicious Use],0.7376514720897626,0.49126105125317504,1.1076182263750691,0.14233857633009855,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Misinformation],5.649563675413423,3.475607213002912,9.183307481680057,2.8296409325240904e-12,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Privacy Infringement],1.5097891314722192,0.8935192940540719,2.551106883399537,0.12373329308366275,Independence (fallback),True
+qwen3.6,ALL,category,C(category)[T.Toxic Content],1.5050055450966,0.95472409027769,2.3724568321227832,0.07833380980623746,Independence (fallback),True

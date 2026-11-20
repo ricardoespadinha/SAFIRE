@@ -1,0 +1,88 @@
+================================================================================
+RoBERTa SCORE ANALYSIS - 50/50 DATASET SPLIT (FIXED SEED)
+================================================================================
+Output directory: roberta_analysis_seed4936_20261117_195615
+Started: 2026-11-17 19:56:15
+Split seed (fixed): 4936
+Test fraction: 0.50
+Stratified (per-label proportion preserved) split: True
+
+================================================================================
+LOADING DATASETS
+================================================================================
+SST3: 1101 samples
+DynaSent: 720 samples
+
+================================================================================
+LOADING RoBERTa
+================================================================================
+Model: cardiffnlp/twitter-roberta-base-sentiment
+Device: cuda
+
+================================================================================
+RUNNING RoBERTa PREDICTIONS
+================================================================================
+  Predicted 320/1821
+  Predicted 640/1821
+  Predicted 960/1821
+  Predicted 1280/1821
+  Predicted 1600/1821
+  Predicted 1821/1821
+
+================================================================================
+SPLITTING WITH FIXED SEED 4936
+================================================================================
+
+SST3 STRATIFIED split (label proportions preserved; full-dataset counts: {'negative': 428, 'neutral': 229, 'positive': 444}):
+  train = 551  ({'positive': 222, 'negative': 214, 'neutral': 115})
+  test  = 550  ({'positive': 222, 'negative': 214, 'neutral': 114})
+
+DynaSent STRATIFIED split (label proportions preserved; full-dataset counts: {'negative': 240, 'neutral': 240, 'positive': 240}):
+  train = 360  ({'negative': 120, 'neutral': 120, 'positive': 120})
+  test  = 360  ({'negative': 120, 'neutral': 120, 'positive': 120})
+
+================================================================================
+TEST-SET RESULTS
+================================================================================
+Test samples: 910
+Test accuracy: 62.42%
+Test neutral samples: 234
+Neutral accuracy: 59.40%
+Neutral misclassifications: 95
+
+Overall score difference statistics (winner - neutral):
+  Mean: 0.4061
+  Median: 0.3394
+  Std Dev: 0.2814
+  Min: 0.0033
+  Max: 0.9632
+
+Percentile analysis of score differences:
+  10th percentile: 0.0565
+  25th percentile: 0.1717
+  50th percentile: 0.3394
+  75th percentile: 0.6294
+  90th percentile: 0.8277
+  95th percentile: 0.8921
+  99th percentile: 0.9335
+
+================================================================================
+CORRECTLY CLASSIFIED NEUTRAL ANALYSIS
+================================================================================
+Mean neutral margin: 0.4186
+Median neutral margin: 0.4277
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+Results saved to: roberta_analysis_seed4936_20261117_195615/
+Files:
+  - all_predictions.csv
+  - analysis_log.txt
+  - summary_statistics.csv
+  - test_misclassification_analysis.png
+  - test_neutral_correct.csv
+  - test_neutral_misclassifications.csv
+  - test_neutral_samples.csv
+  - test_split.csv
+  - train_split.csv

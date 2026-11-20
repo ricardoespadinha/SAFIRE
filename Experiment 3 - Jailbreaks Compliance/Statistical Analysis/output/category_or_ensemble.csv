@@ -1,0 +1,10 @@
+judge,model,term_type,term,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+ensemble,ALL,victim,C(victim)[T.gemma4],0.4964375830209389,0.4239435965103637,0.5813279782128915,3.470558544196476e-18,Independence (fallback),True
+ensemble,ALL,victim,C(victim)[T.llama3],0.5189401388298822,0.44540660387614966,0.6046135493843262,3.961733656969479e-17,Independence (fallback),True
+ensemble,ALL,victim,C(victim)[T.llama4],1.7378306714978287,1.5297455071421735,1.9742208286923324,2.015774816378742e-17,Independence (fallback),True
+ensemble,ALL,victim,C(victim)[T.mistral],6.035426356512952,5.037508133501346,7.231029774948049,1.2244504306249599e-84,Independence (fallback),True
+ensemble,ALL,victim,C(victim)[T.nemotron],1.3361214701221362,1.1807724168078828,1.5119091177176458,4.32938960487702e-06,Independence (fallback),True
+ensemble,ALL,category,C(category)[T.Malicious Use],0.737162062987809,0.4862587141387436,1.1175283677351076,0.1508560314690545,Independence (fallback),True
+ensemble,ALL,category,C(category)[T.Misinformation],5.804587969944002,3.541111140975832,9.514878285219172,3.068114044195326e-12,Independence (fallback),True
+ensemble,ALL,category,C(category)[T.Privacy Infringement],1.2091715278725044,0.6942040826495183,2.1061469103397545,0.5023214182568765,Independence (fallback),True
+ensemble,ALL,category,C(category)[T.Toxic Content],1.5373769510855946,0.966211745375737,2.446180043909649,0.06953711136621289,Independence (fallback),True

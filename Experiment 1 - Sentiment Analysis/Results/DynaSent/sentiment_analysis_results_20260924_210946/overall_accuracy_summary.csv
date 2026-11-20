@@ -1,0 +1,39 @@
+Model,Accuracy
+RoBERTa Dynamic (Percentile),60.83333333333333
+RoBERTa,60.55555555555555
+RoBERTa Dynamic (Balanced),60.55555555555555
+Weighted V1 (Neutral Proximity),60.55555555555555
+RoBERTa (Neutral Proximity),60.0
+RoBERTa Dynamic (Conservative),60.0
+Dynamic Weighted V1 Threshold,59.72222222222222
+RoBERTa Dynamic (Adaptive),59.44444444444444
+Weighted V1 (VADER+RoBERTa),59.166666666666664
+"Voting (No TB, No BERT)",58.88888888888889
+Voting (All 5),58.05555555555556
+Transformer Only,57.49999999999999
+RoBERTa Dynamic (Aggressive),57.49999999999999
+Dynamic Threshold,57.49999999999999
+FinBERT + RoBERTa Only,56.94444444444444
+Conservative Neutral,54.44444444444444
+Weighted (No TextBlob),53.888888888888886
+Best-Per-Class Ensemble,52.77777777777778
+Max Across Individual Models,52.5
+Weighted V2 (All 5 models),52.22222222222223
+Dynamic BERT Threshold,51.388888888888886
+VADER,51.388888888888886
+Emotion-Weighted,51.11111111111111
+TextBlob,49.44444444444444
+BERT (Neutral Proximity),48.888888888888886
+"Weighted (No TB, No BERT)",48.333333333333336
+FinBERT + BERT,48.05555555555556
+BERT,47.5
+Neutral-Focused (Original),46.38888888888889
+FinBERT Heavy (70%),45.27777777777778
+Neutral-Focused (No TextBlob),44.72222222222222
+Aggressive Neutral,44.44444444444444
+FinBERT,43.611111111111114
+FinBERT (Neutral Proximity),43.333333333333336
+Dynamic FinBERT Threshold,43.333333333333336
+TextBlob (Neutral Proximity),43.05555555555556
+Dynamic VADER Threshold,35.27777777777778
+VADER (Neutral Proximity),35.0

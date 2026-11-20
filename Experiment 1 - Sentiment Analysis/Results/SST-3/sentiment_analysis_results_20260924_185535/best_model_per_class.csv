@@ -1,0 +1,4 @@
+Class,Best_Model,Accuracy
+neutral,FinBERT,85.96491228070175
+positive,BERT,77.92792792792793
+negative,RoBERTa,68.22429906542055

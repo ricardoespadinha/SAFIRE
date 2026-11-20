@@ -1,0 +1,6 @@
+judge,model,term_type,term,OR,OR_ci_low,OR_ci_high,p,cov_struct,converged
+gemma4,ALL,victim,C(victim)[T.llama3.2],1.0333699310402817,0.24048312572864844,4.440450493741168,0.9648019770325149,Exchangeable,True
+gemma4,ALL,category,C(category)[T.Malicious Use],131.92850453889568,21.86041727521077,796.1938736460647,1.0190686281542468e-07,Exchangeable,True
+gemma4,ALL,category,C(category)[T.Misinformation],580734940952943.0,86839123841571.36,3883653550661106.5,2.4001238202979875e-269,Exchangeable,True
+gemma4,ALL,category,C(category)[T.Privacy Infringement],1.5511261159606822,0.41898289919672976,5.742459256041281,0.5109668316238467,Exchangeable,True
+gemma4,ALL,category,C(category)[T.Toxic Content],54.02212939152409,6.78081641021312,430.3892462858829,0.00016476667194820904,Exchangeable,True

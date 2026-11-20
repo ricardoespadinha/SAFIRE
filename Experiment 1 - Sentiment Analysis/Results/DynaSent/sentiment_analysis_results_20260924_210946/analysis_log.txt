@@ -1,0 +1,719 @@
+================================================================================
+ADVANCED SENTIMENT ANALYSIS WITH NEUTRAL FOCUS
+================================================================================
+
+Output directory: sentiment_analysis_results_20260924_210946
+Log file: sentiment_analysis_results_20260924_210946/analysis_log.txt
+Analysis started at: 2026-09-24 21:09:46
+
+Loading data...
+✓ Loaded 360 samples
+
+================================================================================
+INITIALIZING MODELS
+================================================================================
+
+[1/6] Loading VADER...
+  ✓ VADER ready
+
+[2/6] Loading RoBERTa (Twitter-tuned)...
+  ✓ RoBERTa ready
+
+[3/6] Loading DistilBERT...
+  ✓ DistilBERT ready
+
+[4/6] Loading BERT (5-star sentiment)...
+  ✓ BERT 5-star ready
+
+[5/6] Loading FinBERT...
+  ✓ FinBERT ready (BEST for neutral detection!)
+
+[6/6] Loading Emotion Detection (Twitter-RoBERTa)...
+  ✓ Emotion detection ready
+
+================================================================================
+MODEL LOADING SUMMARY
+================================================================================
+✓ VADER: Ready
+✓ RoBERTa: Ready
+✓ DistilBERT: Ready
+✓ BERT: Ready
+✓ FinBERT: Ready
+✓ Emotion: Ready
+✓ TextBlob: Ready
+
+Total models loaded: 7/7
+
+================================================================================
+
+================================================================================
+RUNNING SENTIMENT ANALYSIS
+================================================================================
+
+Testing 34 different methods!
+This may take a few minutes...
+
+[1/9] Running individual models...
+[2/9] Running original ensembles...
+[3/9] Running new ensemble variations...
+[4/9] Running specialized ensembles...
+[5/9] Running transformer ensembles...
+[6/9] Running advanced ensembles...
+[7/9] Running neutral-proximity methods...
+[8/9] Running dynamic threshold ensembles...
+[9/9] Running data-driven RoBERTa dynamic methods...
+
+================================================================================
+CREATING MAX AGGREGATION METHODS
+================================================================================
+
+Applying Max Aggregation methods...
+  - Max Across All Methods: Takes max(neg), max(neu), max(pos) from all 5 models
+  - Max Across Individual Models: Same as above (uses 5 base models)
+Max Across Individual Models Accuracy: 52.50%
+
+================================================================================
+OVERALL ACCURACY
+================================================================================
+VADER........................................ 51.39%
+RoBERTa...................................... 60.56%
+TextBlob..................................... 49.44%
+BERT......................................... 47.50%
+FinBERT...................................... 43.61%
+Weighted V1 (VADER+RoBERTa).................. 59.17%
+Weighted V2 (All 5 models)................... 52.22%
+Voting (All 5)............................... 58.06%
+Neutral-Focused (Original)................... 46.39%
+Neutral-Focused (No TextBlob)................ 44.72%
+Weighted (No TextBlob)....................... 53.89%
+Weighted (No TB, No BERT).................... 48.33%
+Voting (No TB, No BERT)...................... 58.89%
+FinBERT + RoBERTa Only....................... 56.94%
+FinBERT + BERT............................... 48.06%
+Conservative Neutral......................... 54.44%
+Aggressive Neutral........................... 44.44%
+Transformer Only............................. 57.50%
+FinBERT Heavy (70%).......................... 45.28%
+Dynamic Threshold............................ 57.50%
+Emotion-Weighted............................. 51.11%
+VADER (Neutral Proximity).................... 35.00%
+RoBERTa (Neutral Proximity).................. 60.00%
+TextBlob (Neutral Proximity)................. 43.06%
+BERT (Neutral Proximity)..................... 48.89%
+FinBERT (Neutral Proximity).................. 43.33%
+Weighted V1 (Neutral Proximity).............. 60.56%
+Max Across Individual Models................. 52.50%
+Dynamic BERT Threshold....................... 51.39%
+Dynamic FinBERT Threshold.................... 43.33%
+Dynamic VADER Threshold...................... 35.28%
+Dynamic Weighted V1 Threshold................ 59.72%
+RoBERTa Dynamic (Conservative)............... 60.00%
+RoBERTa Dynamic (Balanced)................... 60.56%
+RoBERTa Dynamic (Aggressive)................. 57.50%
+RoBERTa Dynamic (Adaptive)................... 59.44%
+RoBERTa Dynamic (Percentile)................. 60.83%
+
+================================================================================
+PER-CLASS ACCURACY (Focus: NEUTRAL)
+================================================================================
+
+NEUTRAL class:
+  VADER......................................  53.33%
+  RoBERTa....................................  65.83%
+  TextBlob...................................  70.83%
+  BERT.......................................  10.00%
+  FinBERT....................................  90.00%
+  Weighted V1 (VADER+RoBERTa)................  76.67%
+  Weighted V2 (All 5 models).................  86.67%
+  Voting (All 5).............................  70.00%
+  Neutral-Focused (Original).................  95.00%
+  Neutral-Focused (No TextBlob)..............  91.67%
+  Weighted (No TextBlob).....................  83.33%
+  Weighted (No TB, No BERT)..................  93.33%
+  Voting (No TB, No BERT)....................  76.67%
+  FinBERT + RoBERTa Only.....................  83.33%
+  FinBERT + BERT.............................  85.83%
+  Conservative Neutral.......................  87.50%
+  Aggressive Neutral.........................  94.17%
+  Transformer Only...........................  75.83%
+  FinBERT Heavy (70%)........................  91.67%
+  Dynamic Threshold..........................  78.33%
+  Emotion-Weighted...........................  90.83%
+  VADER (Neutral Proximity).................. 100.00%
+  RoBERTa (Neutral Proximity)................  71.67%
+  TextBlob (Neutral Proximity)...............  97.50%
+  BERT (Neutral Proximity)...................  20.83%
+  FinBERT (Neutral Proximity)................  92.50%
+  Weighted V1 (Neutral Proximity)............  86.67%
+  Max Across Individual Models...............  88.33%
+  Dynamic BERT Threshold.....................  32.50%
+  Dynamic FinBERT Threshold..................  90.00%
+  Dynamic VADER Threshold....................  98.33%
+  Dynamic Weighted V1 Threshold..............  79.17%
+  RoBERTa Dynamic (Conservative).............  65.00%
+  RoBERTa Dynamic (Balanced).................  81.67%
+  RoBERTa Dynamic (Aggressive)...............  88.33%
+  RoBERTa Dynamic (Adaptive).................  85.83%
+  RoBERTa Dynamic (Percentile)...............  80.00%
+
+POSITIVE class:
+  VADER......................................  56.67%
+  RoBERTa....................................  60.00%
+  TextBlob...................................  50.00%
+  BERT.......................................  65.00%
+  FinBERT....................................  10.83%
+  Weighted V1 (VADER+RoBERTa)................  52.50%
+  Weighted V2 (All 5 models).................  33.33%
+  Voting (All 5).............................  60.00%
+  Neutral-Focused (Original).................  11.67%
+  Neutral-Focused (No TextBlob)..............  10.00%
+  Weighted (No TextBlob).....................  37.50%
+  Weighted (No TB, No BERT)..................  17.50%
+  Voting (No TB, No BERT)....................  55.83%
+  FinBERT + RoBERTa Only.....................  42.50%
+  FinBERT + BERT.............................  20.83%
+  Conservative Neutral.......................  35.83%
+  Aggressive Neutral.........................   9.17%
+  Transformer Only...........................  47.50%
+  FinBERT Heavy (70%)........................  11.67%
+  Dynamic Threshold..........................  45.83%
+  Emotion-Weighted...........................  23.33%
+  VADER (Neutral Proximity)..................   4.17%
+  RoBERTa (Neutral Proximity)................  55.00%
+  TextBlob (Neutral Proximity)...............  20.83%
+  BERT (Neutral Proximity)...................  64.17%
+  FinBERT (Neutral Proximity)................   9.17%
+  Weighted V1 (Neutral Proximity)............  50.00%
+  Max Across Individual Models...............  40.00%
+  Dynamic BERT Threshold.....................  61.67%
+  Dynamic FinBERT Threshold..................  10.00%
+  Dynamic VADER Threshold....................   5.00%
+  Dynamic Weighted V1 Threshold..............  51.67%
+  RoBERTa Dynamic (Conservative).............  60.00%
+  RoBERTa Dynamic (Balanced).................  52.50%
+  RoBERTa Dynamic (Aggressive)...............  43.33%
+  RoBERTa Dynamic (Adaptive).................  48.33%
+  RoBERTa Dynamic (Percentile)...............  53.33%
+
+NEGATIVE class:
+  VADER......................................  44.17%
+  RoBERTa....................................  55.83%
+  TextBlob...................................  27.50%
+  BERT.......................................  67.50%
+  FinBERT....................................  30.00%
+  Weighted V1 (VADER+RoBERTa)................  48.33%
+  Weighted V2 (All 5 models).................  36.67%
+  Voting (All 5).............................  44.17%
+  Neutral-Focused (Original).................  32.50%
+  Neutral-Focused (No TextBlob)..............  32.50%
+  Weighted (No TextBlob).....................  40.83%
+  Weighted (No TB, No BERT)..................  34.17%
+  Voting (No TB, No BERT)....................  44.17%
+  FinBERT + RoBERTa Only.....................  45.00%
+  FinBERT + BERT.............................  37.50%
+  Conservative Neutral.......................  40.00%
+  Aggressive Neutral.........................  30.00%
+  Transformer Only...........................  49.17%
+  FinBERT Heavy (70%)........................  32.50%
+  Dynamic Threshold..........................  48.33%
+  Emotion-Weighted...........................  39.17%
+  VADER (Neutral Proximity)..................   0.83%
+  RoBERTa (Neutral Proximity)................  53.33%
+  TextBlob (Neutral Proximity)...............  10.83%
+  BERT (Neutral Proximity)...................  61.67%
+  FinBERT (Neutral Proximity)................  28.33%
+  Weighted V1 (Neutral Proximity)............  45.00%
+  Max Across Individual Models...............  29.17%
+  Dynamic BERT Threshold.....................  60.00%
+  Dynamic FinBERT Threshold..................  30.00%
+  Dynamic VADER Threshold....................   2.50%
+  Dynamic Weighted V1 Threshold..............  48.33%
+  RoBERTa Dynamic (Conservative).............  55.00%
+  RoBERTa Dynamic (Balanced).................  47.50%
+  RoBERTa Dynamic (Aggressive)...............  40.83%
+  RoBERTa Dynamic (Adaptive).................  44.17%
+  RoBERTa Dynamic (Percentile)...............  49.17%
+
+================================================================================
+DETAILED NEUTRAL DETECTION ANALYSIS
+================================================================================
+
+VADER:
+  Precision: 0.4961  (TP=64, FP=65)
+  Recall:    0.5333  (TP=64, FN=56)
+  F1-Score:  0.5141
+
+RoBERTa:
+  Precision: 0.6031  (TP=79, FP=52)
+  Recall:    0.6583  (TP=79, FN=41)
+  F1-Score:  0.6295
+
+TextBlob:
+  Precision: 0.4722  (TP=85, FP=95)
+  Recall:    0.7083  (TP=85, FN=35)
+  F1-Score:  0.5667
+
+BERT:
+  Precision: 0.3529  (TP=12, FP=22)
+  Recall:    0.1000  (TP=12, FN=108)
+  F1-Score:  0.1558
+
+FinBERT:
+  Precision: 0.3686  (TP=108, FP=185)
+  Recall:    0.9000  (TP=108, FN=12)
+  F1-Score:  0.5230
+
+Weighted V1 (VADER+RoBERTa):
+  Precision: 0.5349  (TP=92, FP=80)
+  Recall:    0.7667  (TP=92, FN=28)
+  F1-Score:  0.6301
+
+Weighted V2 (All 5 models):
+  Precision: 0.4262  (TP=104, FP=140)
+  Recall:    0.8667  (TP=104, FN=16)
+  F1-Score:  0.5714
+
+Voting (All 5):
+  Precision: 0.5385  (TP=84, FP=72)
+  Recall:    0.7000  (TP=84, FN=36)
+  F1-Score:  0.6087
+
+Neutral-Focused (Original):
+  Precision: 0.3851  (TP=114, FP=182)
+  Recall:    0.9500  (TP=114, FN=6)
+  F1-Score:  0.5481
+
+Neutral-Focused (No TextBlob):
+  Precision: 0.3754  (TP=110, FP=183)
+  Recall:    0.9167  (TP=110, FN=10)
+  F1-Score:  0.5327
+
+Weighted (No TextBlob):
+  Precision: 0.4386  (TP=100, FP=128)
+  Recall:    0.8333  (TP=100, FN=20)
+  F1-Score:  0.5747
+
+Weighted (No TB, No BERT):
+  Precision: 0.3944  (TP=112, FP=172)
+  Recall:    0.9333  (TP=112, FN=8)
+  F1-Score:  0.5545
+
+Voting (No TB, No BERT):
+  Precision: 0.5287  (TP=92, FP=82)
+  Recall:    0.7667  (TP=92, FN=28)
+  F1-Score:  0.6259
+
+FinBERT + RoBERTa Only:
+  Precision: 0.4673  (TP=100, FP=114)
+  Recall:    0.8333  (TP=100, FN=20)
+  F1-Score:  0.5988
+
+FinBERT + BERT:
+  Precision: 0.3887  (TP=103, FP=162)
+  Recall:    0.8583  (TP=103, FN=17)
+  F1-Score:  0.5351
+
+Conservative Neutral:
+  Precision: 0.4339  (TP=105, FP=137)
+  Recall:    0.8750  (TP=105, FN=15)
+  F1-Score:  0.5801
+
+Aggressive Neutral:
+  Precision: 0.3754  (TP=113, FP=188)
+  Recall:    0.9417  (TP=113, FN=7)
+  F1-Score:  0.5368
+
+Transformer Only:
+  Precision: 0.4973  (TP=91, FP=92)
+  Recall:    0.7583  (TP=91, FN=29)
+  F1-Score:  0.6007
+
+FinBERT Heavy (70%):
+  Precision: 0.3780  (TP=110, FP=181)
+  Recall:    0.9167  (TP=110, FN=10)
+  F1-Score:  0.5353
+
+Dynamic Threshold:
+  Precision: 0.4870  (TP=94, FP=99)
+  Recall:    0.7833  (TP=94, FN=26)
+  F1-Score:  0.6006
+
+Emotion-Weighted:
+  Precision: 0.4113  (TP=109, FP=156)
+  Recall:    0.9083  (TP=109, FN=11)
+  F1-Score:  0.5662
+
+VADER (Neutral Proximity):
+  Precision: 0.3390  (TP=120, FP=234)
+  Recall:    1.0000  (TP=120, FN=0)
+  F1-Score:  0.5063
+
+RoBERTa (Neutral Proximity):
+  Precision: 0.5695  (TP=86, FP=65)
+  Recall:    0.7167  (TP=86, FN=34)
+  F1-Score:  0.6347
+
+TextBlob (Neutral Proximity):
+  Precision: 0.3811  (TP=117, FP=190)
+  Recall:    0.9750  (TP=117, FN=3)
+  F1-Score:  0.5480
+
+BERT (Neutral Proximity):
+  Precision: 0.3968  (TP=25, FP=38)
+  Recall:    0.2083  (TP=25, FN=95)
+  F1-Score:  0.2732
+
+FinBERT (Neutral Proximity):
+  Precision: 0.3700  (TP=111, FP=189)
+  Recall:    0.9250  (TP=111, FN=9)
+  F1-Score:  0.5286
+
+Weighted V1 (Neutral Proximity):
+  Precision: 0.5200  (TP=104, FP=96)
+  Recall:    0.8667  (TP=104, FN=16)
+  F1-Score:  0.6500
+
+Max Across Individual Models:
+  Precision: 0.4380  (TP=106, FP=136)
+  Recall:    0.8833  (TP=106, FN=14)
+  F1-Score:  0.5856
+
+Dynamic BERT Threshold:
+  Precision: 0.4535  (TP=39, FP=47)
+  Recall:    0.3250  (TP=39, FN=81)
+  F1-Score:  0.3786
+
+Dynamic FinBERT Threshold:
+  Precision: 0.3673  (TP=108, FP=186)
+  Recall:    0.9000  (TP=108, FN=12)
+  F1-Score:  0.5217
+
+Dynamic VADER Threshold:
+  Precision: 0.3401  (TP=118, FP=229)
+  Recall:    0.9833  (TP=118, FN=2)
+  F1-Score:  0.5054
+
+Dynamic Weighted V1 Threshold:
+  Precision: 0.5278  (TP=95, FP=85)
+  Recall:    0.7917  (TP=95, FN=25)
+  F1-Score:  0.6333
+
+RoBERTa Dynamic (Conservative):
+  Precision: 0.5909  (TP=78, FP=54)
+  Recall:    0.6500  (TP=78, FN=42)
+  F1-Score:  0.6190
+
+RoBERTa Dynamic (Balanced):
+  Precision: 0.5385  (TP=98, FP=84)
+  Recall:    0.8167  (TP=98, FN=22)
+  F1-Score:  0.6490
+
+RoBERTa Dynamic (Aggressive):
+  Precision: 0.4796  (TP=106, FP=115)
+  Recall:    0.8833  (TP=106, FN=14)
+  F1-Score:  0.6217
+
+RoBERTa Dynamic (Adaptive):
+  Precision: 0.5024  (TP=103, FP=102)
+  Recall:    0.8583  (TP=103, FN=17)
+  F1-Score:  0.6338
+
+RoBERTa Dynamic (Percentile):
+  Precision: 0.5517  (TP=96, FP=78)
+  Recall:    0.8000  (TP=96, FN=24)
+  F1-Score:  0.6531
+
+================================================================================
+🎯 BEST INDIVIDUAL MODEL PER CLASS
+================================================================================
+
+NEUTRAL Detection:
+  🏆 Best Model: FinBERT
+  Accuracy: 90.00%
+
+  All individual models:
+    FinBERT... 90.00%
+    TextBlob.. 70.83%
+    RoBERTa... 65.83%
+    VADER..... 53.33%
+    BERT...... 10.00%
+
+POSITIVE Detection:
+  🏆 Best Model: BERT
+  Accuracy: 65.00%
+
+  All individual models:
+    BERT...... 65.00%
+    RoBERTa... 60.00%
+    VADER..... 56.67%
+    TextBlob.. 50.00%
+    FinBERT... 10.83%
+
+NEGATIVE Detection:
+  🏆 Best Model: BERT
+  Accuracy: 67.50%
+
+  All individual models:
+    BERT...... 67.50%
+    RoBERTa... 55.83%
+    VADER..... 44.17%
+    FinBERT... 30.00%
+    TextBlob.. 27.50%
+
+================================================================================
+CREATING BEST-PER-CLASS ENSEMBLE
+================================================================================
+Uses: FinBERT for neutral
+      BERT for positive
+      BERT for negative
+
+Applying Best-Per-Class ensemble...
+
+Best-Per-Class Ensemble Accuracy: 52.78%
+  Neutral F1-Score: 0.5689
+
+================================================================================
+📊 NEUTRAL MISCLASSIFICATION ANALYSIS
+================================================================================
+
+When ground truth is NEUTRAL and model gets it wrong,
+how often does it misclassify as POSITIVE vs NEGATIVE?
+
+VADER:
+  Total neutral samples: 120
+  Total errors: 56
+  Misclassified as POSITIVE: 40 (71.4% of errors)
+  Misclassified as NEGATIVE: 16 (28.6% of errors)
+  Pos/Neg ratio: 2.50x
+  → BIAS: Tends to misclassify neutrals as POSITIVE
+
+RoBERTa:
+  Total neutral samples: 120
+  Total errors: 41
+  Misclassified as POSITIVE: 21 (51.2% of errors)
+  Misclassified as NEGATIVE: 20 (48.8% of errors)
+  Pos/Neg ratio: 1.05x
+  → Balanced misclassification
+
+TextBlob:
+  Total neutral samples: 120
+  Total errors: 35
+  Misclassified as POSITIVE: 26 (74.3% of errors)
+  Misclassified as NEGATIVE: 9 (25.7% of errors)
+  Pos/Neg ratio: 2.89x
+  → BIAS: Tends to misclassify neutrals as POSITIVE
+
+BERT:
+  Total neutral samples: 120
+  Total errors: 108
+  Misclassified as POSITIVE: 49 (45.4% of errors)
+  Misclassified as NEGATIVE: 59 (54.6% of errors)
+  Pos/Neg ratio: 0.83x
+  → Balanced misclassification
+
+FinBERT:
+  Total neutral samples: 120
+  Total errors: 12
+  Misclassified as POSITIVE: 0 (0.0% of errors)
+  Misclassified as NEGATIVE: 12 (100.0% of errors)
+  Pos/Neg ratio: 0.00x
+  → BIAS: Tends to misclassify neutrals as NEGATIVE
+
+VADER (Neutral Proximity): Perfect! No misclassifications
+RoBERTa (Neutral Proximity):
+  Total neutral samples: 120
+  Total errors: 34
+  Misclassified as POSITIVE: 17 (50.0% of errors)
+  Misclassified as NEGATIVE: 17 (50.0% of errors)
+  Pos/Neg ratio: 1.00x
+  → Balanced misclassification
+
+TextBlob (Neutral Proximity):
+  Total neutral samples: 120
+  Total errors: 3
+  Misclassified as POSITIVE: 2 (66.7% of errors)
+  Misclassified as NEGATIVE: 1 (33.3% of errors)
+  Pos/Neg ratio: 2.00x
+  → BIAS: Tends to misclassify neutrals as POSITIVE
+
+BERT (Neutral Proximity):
+  Total neutral samples: 120
+  Total errors: 95
+  Misclassified as POSITIVE: 45 (47.4% of errors)
+  Misclassified as NEGATIVE: 50 (52.6% of errors)
+  Pos/Neg ratio: 0.90x
+  → Balanced misclassification
+
+FinBERT (Neutral Proximity):
+  Total neutral samples: 120
+  Total errors: 9
+  Misclassified as POSITIVE: 0 (0.0% of errors)
+  Misclassified as NEGATIVE: 9 (100.0% of errors)
+  Pos/Neg ratio: 0.00x
+  → BIAS: Tends to misclassify neutrals as NEGATIVE
+
+Weighted V1 (Neutral Proximity):
+  Total neutral samples: 120
+  Total errors: 16
+  Misclassified as POSITIVE: 11 (68.8% of errors)
+  Misclassified as NEGATIVE: 5 (31.2% of errors)
+  Pos/Neg ratio: 2.20x
+  → BIAS: Tends to misclassify neutrals as POSITIVE
+
+
+================================================================================
+📈 NEUTRAL PROXIMITY BOOST IMPACT
+================================================================================
+
+Comparing original models vs their neutral-proximity variants:
+
+VADER:
+  Overall Accuracy: 51.39% → 35.00% (-16.39%)
+  Neutral Accuracy: 53.33% → 100.00% (+46.67%)
+  Neutral F1-Score: 0.5141 → 0.5063 (-0.0077)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+RoBERTa:
+  Overall Accuracy: 60.56% → 60.00% (-0.56%)
+  Neutral Accuracy: 65.83% → 71.67% (+5.83%)
+  Neutral F1-Score: 0.6295 → 0.6347 (+0.0052)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+TextBlob:
+  Overall Accuracy: 49.44% → 43.06% (-6.39%)
+  Neutral Accuracy: 70.83% → 97.50% (+26.67%)
+  Neutral F1-Score: 0.5667 → 0.5480 (-0.0187)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+BERT:
+  Overall Accuracy: 47.50% → 48.89% (+1.39%)
+  Neutral Accuracy: 10.00% → 20.83% (+10.83%)
+  Neutral F1-Score: 0.1558 → 0.2732 (+0.1174)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+FinBERT:
+  Overall Accuracy: 43.61% → 43.33% (-0.28%)
+  Neutral Accuracy: 90.00% → 92.50% (+2.50%)
+  Neutral F1-Score: 0.5230 → 0.5286 (+0.0056)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+Weighted V1:
+  Overall Accuracy: 59.17% → 60.56% (+1.39%)
+  Neutral Accuracy: 76.67% → 86.67% (+10.00%)
+  Neutral F1-Score: 0.0000 → 0.6500 (+0.6500)
+  ✓ IMPROVEMENT: Proximity boost helps neutral detection!
+
+
+================================================================================
+🏆 TOP 5 PERFORMERS
+================================================================================
+
+By Overall Accuracy:
+  1. RoBERTa Dynamic (Percentile)............... 60.83%
+  2. RoBERTa.................................... 60.56%
+  3. Weighted V1 (Neutral Proximity)............ 60.56%
+  4. RoBERTa Dynamic (Balanced)................. 60.56%
+  5. RoBERTa (Neutral Proximity)................ 60.00%
+
+By Neutral F1-Score:
+  1. RoBERTa Dynamic (Percentile)............... F1=0.6531
+  2. Weighted V1 (Neutral Proximity)............ F1=0.6500
+  3. RoBERTa Dynamic (Balanced)................. F1=0.6490
+  4. RoBERTa (Neutral Proximity)................ F1=0.6347
+  5. RoBERTa Dynamic (Adaptive)................. F1=0.6338
+
+By Neutral Recall (catches most neutrals):
+  1. VADER (Neutral Proximity).................. Recall=1.0000
+  2. Dynamic VADER Threshold.................... Recall=0.9833
+  3. TextBlob (Neutral Proximity)............... Recall=0.9750
+  4. Neutral-Focused (Original)................. Recall=0.9500
+  5. Aggressive Neutral......................... Recall=0.9417
+
+By Neutral Precision (avoids false neutrals):
+  1. RoBERTa.................................... Precision=0.6031
+  2. RoBERTa Dynamic (Conservative)............. Precision=0.5909
+  3. RoBERTa (Neutral Proximity)................ Precision=0.5695
+  4. RoBERTa Dynamic (Percentile)............... Precision=0.5517
+  5. Voting (All 5)............................. Precision=0.5385
+
+================================================================================
+CONFUSION MATRICES - TOP 3 BY NEUTRAL F1
+================================================================================
+
+1. RoBERTa Dynamic (Percentile)
+   (F1=0.6531, Precision=0.5517, Recall=0.8000)
+
+                Predicted
+              neg  neu  pos
+Actual  neg    59   40   21
+        neu     9   96   15
+        pos    18   38   64
+
+2. Weighted V1 (Neutral Proximity)
+   (F1=0.6500, Precision=0.5200, Recall=0.8667)
+
+                Predicted
+              neg  neu  pos
+Actual  neg    54   46   20
+        neu     5  104   11
+        pos    10   50   60
+
+3. RoBERTa Dynamic (Balanced)
+   (F1=0.6490, Precision=0.5385, Recall=0.8167)
+
+                Predicted
+              neg  neu  pos
+Actual  neg    57   42   21
+        neu     8   98   14
+        pos    15   42   63
+
+================================================================================
+🎯 FINAL RECOMMENDATIONS
+================================================================================
+
+🥇 Best Overall Accuracy:
+   RoBERTa Dynamic (Percentile) - 60.83%
+
+🎯 Best Neutral Detector (by F1-Score):
+   RoBERTa Dynamic (Percentile) - F1=0.6531
+   (Precision=0.5517, Recall=0.8000)
+
+🔍 Best Neutral Recall (catches most neutrals):
+   VADER (Neutral Proximity) - Recall=1.0000
+
+🎯 Best Neutral Precision (fewest false neutrals):
+   RoBERTa - Precision=0.6031
+
+================================================================================
+SAVING RESULTS
+================================================================================
+✓ sentiment_analysis_results_20260924_210946/full_predictions.csv
+✓ sentiment_analysis_results_20260924_210946/overall_accuracy_summary.csv
+✓ sentiment_analysis_results_20260924_210946/per_class_accuracy.csv
+✓ sentiment_analysis_results_20260924_210946/neutral_detection_metrics.csv
+✓ sentiment_analysis_results_20260924_210946/best_model_per_class.csv
+✓ sentiment_analysis_results_20260924_210946/neutral_misclassification_analysis.csv
+✓ sentiment_analysis_results_20260924_210946/neutral_proximity_impact.csv
+✓ sentiment_analysis_results_20260924_210946/model_loading_status.csv
+
+✓ All files saved to: sentiment_analysis_results_20260924_210946/
+✓ Complete log saved to: sentiment_analysis_results_20260924_210946/analysis_log.txt
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+
+Dataset: 360 samples
+Models loaded: 7/7
+Methods tested: 38
+
+Best overall: RoBERTa Dynamic (Percentile) (60.83%)
+Best neutral F1: RoBERTa Dynamic (Percentile) (F1=0.6531)
+Best neutral recall: VADER (Neutral Proximity) (Recall=1.0000)
+Best neutral precision: RoBERTa (Precision=0.6031)
+
+Analysis completed at: 2026-09-24 21:20:08
+
+================================================================================
+✅ ANALYSIS COMPLETE!
+================================================================================

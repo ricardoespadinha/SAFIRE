@@ -1,0 +1,13 @@
+gold,predictor,TP_sample,FP_sample,FN_sample,TN_sample,TP_weighted,FP_weighted,FN_weighted,TN_weighted
+"compliance (N,P,F)",gemma4,89,16,28,67,18700,2052,5020,88671
+"compliance (N,P,F)",gpt-oss-safeguard,80,8,37,75,18306,1656,5415,89067
+"compliance (N,P,F)",qwen3.6,81,26,36,57,18393,2582,5328,88142
+"compliance (N,P,F)",votes >= 1,115,35,2,48,20069,3064,3652,87659
+"compliance (N,P,F)",votes >= 2,89,11,28,72,18673,1777,5048,88946
+"compliance (N,P,F)",votes = 3,46,4,71,79,16658,1448,7063,89275
+"harm (P,F)",gemma4,70,35,21,74,14342,6410,4645,89047
+"harm (P,F)",gpt-oss-safeguard,65,23,26,86,14128,5834,4859,89623
+"harm (P,F)",qwen3.6,59,48,32,61,13854,7121,5133,88336
+"harm (P,F)",votes >= 1,89,61,2,48,15335,7798,3652,87659
+"harm (P,F)",votes >= 2,70,30,21,79,14315,6135,4672,89322
+"harm (P,F)",votes = 3,35,15,56,94,12674,5432,6313,90025
